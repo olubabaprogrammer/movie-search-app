@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie searcher</title>
+    <link rel="stylesheet" href="movie-search.css">
+</head>
+<body> 
+    
+    <div class="container">
+        <h1>Movie Search</h1>
+
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search for movies...">
+            <button id="search-button">Search</button>
+            <div class="nav-tabs">
+                <button id="result-tab" data-tab="search-results">Search Results</button>
+                <button id="watchlist-tab" data-tab="favorites">my watchlist</button>
+            </div>
+ 
+            <div id="toast"></div>
+
+            <div id="result-container"></div>
+
+            <div id="watchlist-container"></div>
+
+            <p id="error-message"></p>
+ 
+            <div id="modal-overlay">
+                <div id="modal-content">
+                    <span id="close-modal">&times;</span>
+                    <div id="modal-body"></div>
+                </div>
+            </div>
+
+    </div>
+
+
+
+    <script src="movie-search.js"></script>
+</body>
+</html>
+
